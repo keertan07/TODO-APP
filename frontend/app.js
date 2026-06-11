@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
 // Backend API URL - change this when deploying to Render
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://todo-app-backend-2m6f.onrender.com/api';
 
 // ===== ON PAGE LOAD =====
 // When page opens, fetch all todos from backend
