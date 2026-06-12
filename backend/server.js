@@ -153,7 +153,7 @@ app.get('/auth/google/callback',
       process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );
-    res.redirect(`${process.env.FRONTEND_URL}/index.html?token=${token}`);
+    res.redirect(`${process.env.FRONTEND_URL}?token=${token}`);
   }
 );
 
