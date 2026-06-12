@@ -68,7 +68,7 @@ const User = mongoose.model('User', userSchema);
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: '/auth/google/callback'
+  callbackURL: 'https://todo-app-backend-2m6f.onrender.com/auth/google/callback'//callback URL for deployed backend (p2)
 }, async (accessToken, refreshToken, profile, done) => {
   let user = await User.findOne({ googleId: profile.id });
   if (!user) {
